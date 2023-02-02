@@ -1,4 +1,4 @@
-package org.kaqui.model
+package org.kaqui_plhosk.model
 
 import android.content.ContentValues
 import android.content.Context

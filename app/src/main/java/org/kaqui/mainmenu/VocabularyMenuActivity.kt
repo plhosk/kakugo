@@ -1,12 +1,12 @@
-package org.kaqui.mainmenu
+package org.kaqui_plhosk.mainmenu
 
 import android.os.Bundle
 import android.view.Gravity
 import org.jetbrains.anko.*
-import org.kaqui.*
-import org.kaqui.model.TestType
-import org.kaqui.settings.ClassSelectionActivity
-import org.kaqui.settings.SelectionMode
+import org.kaqui_plhosk.*
+import org.kaqui_plhosk.model.TestType
+import org.kaqui_plhosk.settings.ClassSelectionActivity
+import org.kaqui_plhosk.settings.SelectionMode
 import java.io.Serializable
 
 class VocabularyMenuActivity : BaseActivity() {

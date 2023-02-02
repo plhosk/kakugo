@@ -1,4 +1,4 @@
-package org.kaqui.settings
+package org.kaqui_plhosk.settings
 
 import android.content.Context
 import android.os.Build
@@ -9,9 +9,9 @@ import android.view.ViewOutlineProvider
 import android.widget.BaseAdapter
 import android.widget.LinearLayout
 import android.widget.TextView
-import org.kaqui.R
-import org.kaqui.StatsFragment
-import org.kaqui.model.*
+import org.kaqui_plhosk.R
+import org.kaqui_plhosk.StatsFragment
+import org.kaqui_plhosk.model.*
 
 class ClassSelectionAdapter(private val context: Context, private val dbView: LearningDbView, classification: Classification) : BaseAdapter() {
     private val levels = getClassifiers(classification).map { mapOf("label" to it.name(context), "classifier" to it) }

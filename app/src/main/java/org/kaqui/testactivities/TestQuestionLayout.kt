@@ -1,4 +1,4 @@
-package org.kaqui.testactivities
+package org.kaqui_plhosk.testactivities
 
 import android.app.Activity
 import android.content.res.Configuration
@@ -10,13 +10,13 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.widget.TextViewCompat
 import org.jetbrains.anko.*
-import org.kaqui.TypefaceManager
-import org.kaqui.appCompatTextView
+import org.kaqui_plhosk.TypefaceManager
+import org.kaqui_plhosk.appCompatTextView
 
 class TestQuestionLayout {
     lateinit var questionText: TextView
 
-    fun <T : ViewManager> makeMainBlock(activity: Activity, subLayout: T, questionMinSize: Int, forceLandscape: Boolean = false, answersBlock: _LinearLayout.() -> View): LinearLayout {
+    fun <T : ViewManager> makeMainBlock(activity: Activity, subLayout: T, questionMinSize: Int, questionMaxSize: Int = 200, forceLandscape: Boolean = false, answersBlock: _LinearLayout.() -> View): LinearLayout {
         with(subLayout) {
             return verticalLayout {
                 if (forceLandscape || activity.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
@@ -24,7 +24,7 @@ class TestQuestionLayout {
                         gravity = Gravity.CENTER
                         questionText = appCompatTextView {
                             typeface = TypefaceManager.getTypeface(activity)
-                            TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(this, questionMinSize, 200, 10, TypedValue.COMPLEX_UNIT_SP)
+                            TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(this, questionMinSize, questionMaxSize, 10, TypedValue.COMPLEX_UNIT_SP)
                             textAlignment = TextView.TEXT_ALIGNMENT_CENTER
                             gravity = Gravity.CENTER
                         }.lparams(width = 0, height = matchParent, weight = 1f) {
@@ -49,7 +49,7 @@ class TestQuestionLayout {
                     gravity = Gravity.CENTER
                     questionText = appCompatTextView {
                         typeface = TypefaceManager.getTypeface(activity)
-                        TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(this, questionMinSize, 200, 10, TypedValue.COMPLEX_UNIT_SP)
+                        TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(this, questionMinSize, questionMaxSize, 10, TypedValue.COMPLEX_UNIT_SP)
                         textAlignment = TextView.TEXT_ALIGNMENT_CENTER
                         gravity = Gravity.CENTER
                     }.lparams(width = matchParent, height = 0, weight = weightQuestion) {

@@ -1,16 +1,16 @@
-package org.kaqui.settings
+package org.kaqui_plhosk.settings
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import org.jetbrains.anko.*
-import org.kaqui.BaseActivity
-import org.kaqui.R
-import org.kaqui.StatsFragment
-import org.kaqui.databinding.ItemSelectionActivityBinding
-import org.kaqui.model.Classifier
-import org.kaqui.model.Database
-import org.kaqui.model.LearningDbView
+import org.kaqui_plhosk.BaseActivity
+import org.kaqui_plhosk.R
+import org.kaqui_plhosk.StatsFragment
+import org.kaqui_plhosk.databinding.ItemSelectionActivityBinding
+import org.kaqui_plhosk.model.Classifier
+import org.kaqui_plhosk.model.Database
+import org.kaqui_plhosk.model.LearningDbView
 
 class ItemSelectionActivity : BaseActivity() {
     private lateinit var dbView: LearningDbView

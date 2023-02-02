@@ -1,4 +1,4 @@
-package org.kaqui.testactivities
+package org.kaqui_plhosk.testactivities
 
 import android.os.Build
 import android.os.Bundle
@@ -12,11 +12,11 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import org.jetbrains.anko.*
 import org.jetbrains.anko.support.v4.UI
-import org.kaqui.*
-import org.kaqui.model.Certainty
-import org.kaqui.model.Kana
-import org.kaqui.model.getQuestionText
-import org.kaqui.model.text
+import org.kaqui_plhosk.*
+import org.kaqui_plhosk.model.Certainty
+import org.kaqui_plhosk.model.Kana
+import org.kaqui_plhosk.model.getQuestionText
+import org.kaqui_plhosk.model.text
 import java.util.*
 
 class TextTestFragment : Fragment(), TestFragment {

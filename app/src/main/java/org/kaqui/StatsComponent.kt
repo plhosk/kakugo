@@ -1,4 +1,4 @@
-package org.kaqui
+package org.kaqui_plhosk
 
 import android.view.ViewManager
 import android.widget.LinearLayout

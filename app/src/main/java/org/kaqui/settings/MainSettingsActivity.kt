@@ -1,4 +1,4 @@
-package org.kaqui.settings
+package org.kaqui_plhosk.settings
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -15,7 +15,7 @@ import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import org.jetbrains.anko.*
 import org.jetbrains.anko.support.v4.defaultSharedPreferences
-import org.kaqui.*
+import org.kaqui_plhosk.*
 import java.io.File
 
 class MainSettingsActivity : BaseActivity() {

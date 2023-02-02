@@ -1,4 +1,4 @@
-package org.kaqui.testactivities
+package org.kaqui_plhosk.testactivities
 
 import android.animation.Animator
 import android.animation.ObjectAnimator
@@ -27,8 +27,8 @@ import org.jetbrains.anko.*
 import org.jetbrains.anko.design.coordinatorLayout
 import org.jetbrains.anko.design.floatingActionButton
 import org.jetbrains.anko.support.v4.nestedScrollView
-import org.kaqui.*
-import org.kaqui.model.*
+import org.kaqui_plhosk.*
+import org.kaqui_plhosk.model.*
 import kotlin.coroutines.CoroutineContext
 
 class TestActivity : BaseActivity(), TestFragmentHolder, CoroutineScope {

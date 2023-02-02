@@ -1,4 +1,4 @@
-package org.kaqui.settings
+package org.kaqui_plhosk.settings
 
 import android.os.Bundle
 import android.view.ContextMenu
@@ -8,9 +8,9 @@ import android.widget.AdapterView
 import android.widget.ListView
 import org.jetbrains.anko.listView
 import org.jetbrains.anko.toast
-import org.kaqui.BaseActivity
-import org.kaqui.R
-import org.kaqui.model.Database
+import org.kaqui_plhosk.BaseActivity
+import org.kaqui_plhosk.R
+import org.kaqui_plhosk.model.Database
 
 class SavedSelectionsActivity : BaseActivity() {
     private lateinit var listView: ListView

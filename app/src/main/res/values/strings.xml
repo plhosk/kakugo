@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Kakugo</string>
+    <string name="app_name" translatable="false">Kakugo (plhosk)</string>
     <string name="hiragana" translatable="false"><font size="30">ひらがな</font>\nHIRAGANA</string>
     <string name="katakana" translatable="false"><font size="30">カタカナ</font>\nKATAKANA</string>
     <string name="kanji" translatable="false"><font size="30">漢字</font>\nKANJI</string>

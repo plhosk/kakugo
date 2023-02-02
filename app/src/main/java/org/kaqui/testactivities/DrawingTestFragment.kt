@@ -1,4 +1,4 @@
-package org.kaqui.testactivities
+package org.kaqui_plhosk.testactivities
 
 import android.graphics.*
 import android.os.Bundle
@@ -14,11 +14,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import org.jetbrains.anko.*
 import org.jetbrains.anko.support.v4.UI
-import org.kaqui.*
-import org.kaqui.model.Certainty
-import org.kaqui.model.Database
-import org.kaqui.model.getQuestionText
-import org.kaqui.model.text
+import org.kaqui_plhosk.*
+import org.kaqui_plhosk.model.Certainty
+import org.kaqui_plhosk.model.Database
+import org.kaqui_plhosk.model.getQuestionText
+import org.kaqui_plhosk.model.text
 import kotlin.coroutines.CoroutineContext
 import kotlin.math.pow
 

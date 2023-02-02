@@ -1,12 +1,12 @@
-package org.kaqui.settings
+package org.kaqui_plhosk.settings
 
 import android.view.View
 import android.widget.CheckBox
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import org.kaqui.R
-import org.kaqui.StatsFragment
-import org.kaqui.model.LearningDbView
+import org.kaqui_plhosk.R
+import org.kaqui_plhosk.StatsFragment
+import org.kaqui_plhosk.model.LearningDbView
 
 class ItemSelectionViewHolder(private val dbView: LearningDbView, v: View, private val statsFragment: StatsFragment) : RecyclerView.ViewHolder(v) {
     val enabled: CheckBox = v.findViewById(R.id.item_checkbox)

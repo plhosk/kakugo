@@ -1,4 +1,4 @@
-package org.kaqui
+package org.kaqui_plhosk
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

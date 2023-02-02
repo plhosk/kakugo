@@ -1,4 +1,4 @@
-package org.kaqui
+package org.kaqui_plhosk
 
 import android.content.Context
 import android.os.Build

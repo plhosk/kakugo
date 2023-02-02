@@ -1,4 +1,4 @@
-package org.kaqui
+package org.kaqui_plhosk
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import org.jetbrains.anko.support.v4.UI
-import org.kaqui.model.LearningDbView
+import org.kaqui_plhosk.model.LearningDbView
 
 class StatsFragment : androidx.fragment.app.Fragment() {
     private var showDisabled: Boolean = false

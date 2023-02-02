@@ -1,4 +1,4 @@
-package org.kaqui
+package org.kaqui_plhosk
 
 import android.app.Activity
 import android.content.Context
@@ -24,12 +24,12 @@ import androidx.core.graphics.drawable.DrawableCompat
 import com.github.mikephil.charting.charts.BarChart
 import org.jetbrains.anko.*
 import org.jetbrains.anko.custom.ankoView
-import org.kaqui.model.BAD_WEIGHT
-import org.kaqui.model.Database
-import org.kaqui.model.GOOD_WEIGHT
-import org.kaqui.model.TestType
-import org.kaqui.testactivities.DrawView
-import org.kaqui.testactivities.TestActivity
+import org.kaqui_plhosk.model.BAD_WEIGHT
+import org.kaqui_plhosk.model.Database
+import org.kaqui_plhosk.model.GOOD_WEIGHT
+import org.kaqui_plhosk.model.TestType
+import org.kaqui_plhosk.testactivities.DrawView
+import org.kaqui_plhosk.testactivities.TestActivity
 import java.util.*
 import kotlin.math.pow
 

@@ -11,14 +11,14 @@ android {
     signingConfigs {
         debugconfig {
             keyAlias 'androiddebugkey'
-            storeFile file('/home/blastrock/.android/debug.keystore')
+            storeFile file('/home/paul/.android/debug.keystore')
             keyPassword 'android'
             storePassword 'android'
         }
     }
     compileSdkVersion 31
     defaultConfig {
-        applicationId "org.kaqui"
+        applicationId "org.kaqui_plhosk"
         minSdkVersion 19
         targetSdkVersion 31
         versionCode 78

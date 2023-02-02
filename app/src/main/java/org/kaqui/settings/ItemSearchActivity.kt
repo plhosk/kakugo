@@ -1,16 +1,16 @@
-package org.kaqui.settings
+package org.kaqui_plhosk.settings
 
 import android.os.Bundle
 import android.view.ContextThemeWrapper
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.kaqui.BaseActivity
-import org.kaqui.R
-import org.kaqui.StatsFragment
-import org.kaqui.databinding.ItemSelectionActivityBinding
-import org.kaqui.model.Database
-import org.kaqui.model.LearningDbView
+import org.kaqui_plhosk.BaseActivity
+import org.kaqui_plhosk.R
+import org.kaqui_plhosk.StatsFragment
+import org.kaqui_plhosk.databinding.ItemSelectionActivityBinding
+import org.kaqui_plhosk.model.Database
+import org.kaqui_plhosk.model.LearningDbView
 
 class ItemSearchActivity : BaseActivity() {
     private lateinit var dbView: LearningDbView

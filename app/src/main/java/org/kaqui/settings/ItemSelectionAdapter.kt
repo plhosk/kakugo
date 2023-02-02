@@ -1,4 +1,4 @@
-package org.kaqui.settings
+package org.kaqui_plhosk.settings
 
 import android.content.Context
 import android.view.Gravity
@@ -7,10 +7,10 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import org.jetbrains.anko.*
-import org.kaqui.*
-import org.kaqui.model.LearningDbView
-import org.kaqui.model.description
-import org.kaqui.model.text
+import org.kaqui_plhosk.*
+import org.kaqui_plhosk.model.LearningDbView
+import org.kaqui_plhosk.model.description
+import org.kaqui_plhosk.model.text
 
 class ItemSelectionAdapter(private val view: LearningDbView, private val context: Context, private val statsFragment: StatsFragment) : RecyclerView.Adapter<ItemSelectionViewHolder>() {
     private val ankoContext = AnkoContext.createReusable(context, this)

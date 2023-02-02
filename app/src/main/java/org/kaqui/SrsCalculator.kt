@@ -1,9 +1,9 @@
-package org.kaqui
+package org.kaqui_plhosk
 
 import android.util.Log
-import org.kaqui.model.Certainty
-import org.kaqui.model.GOOD_WEIGHT
-import org.kaqui.model.Item
+import org.kaqui_plhosk.model.Certainty
+import org.kaqui_plhosk.model.GOOD_WEIGHT
+import org.kaqui_plhosk.model.Item
 import java.util.*
 import kotlin.math.max
 import kotlin.math.min

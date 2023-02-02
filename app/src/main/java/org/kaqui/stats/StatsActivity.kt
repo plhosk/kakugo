@@ -1,10 +1,10 @@
-package org.kaqui.stats
+package org.kaqui_plhosk.stats
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.commit
 import org.jetbrains.anko.frameLayout
-import org.kaqui.BaseActivity
+import org.kaqui_plhosk.BaseActivity
 
 class StatsActivity : BaseActivity() {
     companion object {

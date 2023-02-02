@@ -1,8 +1,8 @@
-package org.kaqui.model
+package org.kaqui_plhosk.model
 
 import android.content.ContentValues
 import android.database.sqlite.SQLiteDatabase
-import org.kaqui.SrsCalculator
+import org.kaqui_plhosk.SrsCalculator
 import java.util.*
 
 class LearningDbView(

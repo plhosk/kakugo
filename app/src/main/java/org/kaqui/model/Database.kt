@@ -1,4 +1,4 @@
-package org.kaqui.model
+package org.kaqui_plhosk.model
 
 import android.content.ContentValues
 import android.content.Context
@@ -6,9 +6,9 @@ import android.database.sqlite.SQLiteDatabase
 import android.graphics.Path
 import android.util.Log
 import androidx.core.database.sqlite.transaction
-import org.kaqui.LocaleManager
-import org.kaqui.asUnicodeCodePoint
-import org.kaqui.roundToPreviousDay
+import org.kaqui_plhosk.LocaleManager
+import org.kaqui_plhosk.asUnicodeCodePoint
+import org.kaqui_plhosk.roundToPreviousDay
 import java.util.*
 import kotlin.collections.HashSet
 

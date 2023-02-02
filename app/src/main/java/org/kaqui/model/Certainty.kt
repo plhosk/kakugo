@@ -1,4 +1,4 @@
-package org.kaqui.model
+package org.kaqui_plhosk.model
 
 enum class Certainty(val value: Int) {
     DONTKNOW(0),

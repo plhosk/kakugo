@@ -1,13 +1,13 @@
-package org.kaqui.settings
+package org.kaqui_plhosk.settings
 
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import androidx.core.text.HtmlCompat
 import org.jetbrains.anko.*
-import org.kaqui.BaseActivity
-import org.kaqui.BuildConfig
-import org.kaqui.R
-import org.kaqui.appTitleImage
+import org.kaqui_plhosk.BaseActivity
+import org.kaqui_plhosk.BuildConfig
+import org.kaqui_plhosk.R
+import org.kaqui_plhosk.appTitleImage
 
 class AboutActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

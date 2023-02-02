@@ -1,4 +1,4 @@
-package org.kaqui.testactivities
+package org.kaqui_plhosk.testactivities
 
 interface TestFragment {
     fun startNewQuestion() {}

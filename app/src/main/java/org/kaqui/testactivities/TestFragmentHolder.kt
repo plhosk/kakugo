@@ -1,10 +1,10 @@
-package org.kaqui.testactivities
+package org.kaqui_plhosk.testactivities
 
 import android.view.View
-import org.kaqui.TestEngine
-import org.kaqui.model.Certainty
-import org.kaqui.model.Item
-import org.kaqui.model.TestType
+import org.kaqui_plhosk.TestEngine
+import org.kaqui_plhosk.model.Certainty
+import org.kaqui_plhosk.model.Item
+import org.kaqui_plhosk.model.TestType
 
 interface TestFragmentHolder {
     val testEngine: TestEngine

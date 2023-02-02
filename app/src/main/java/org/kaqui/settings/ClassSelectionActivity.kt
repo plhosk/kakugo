@@ -1,4 +1,4 @@
-package org.kaqui.settings
+package org.kaqui_plhosk.settings
 
 import android.Manifest
 import android.app.Activity
@@ -18,13 +18,13 @@ import android.widget.Toast
 import androidx.preference.PreferenceManager
 import kotlinx.coroutines.*
 import org.jetbrains.anko.*
-import org.kaqui.BaseActivity
-import org.kaqui.R
-import org.kaqui.StatsFragment
-import org.kaqui.model.Classification
-import org.kaqui.model.Classifier
-import org.kaqui.model.Database
-import org.kaqui.model.LearningDbView
+import org.kaqui_plhosk.BaseActivity
+import org.kaqui_plhosk.R
+import org.kaqui_plhosk.StatsFragment
+import org.kaqui_plhosk.model.Classification
+import org.kaqui_plhosk.model.Classifier
+import org.kaqui_plhosk.model.Database
+import org.kaqui_plhosk.model.LearningDbView
 import java.io.Serializable
 import kotlin.coroutines.CoroutineContext
 

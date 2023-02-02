@@ -1,4 +1,4 @@
-package org.kaqui.model
+package org.kaqui_plhosk.model
 
 enum class TestType(val value: Int) {
     HIRAGANA_TO_ROMAJI(1),

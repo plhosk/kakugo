@@ -1,4 +1,4 @@
-package org.kaqui.model
+package org.kaqui_plhosk.model
 
 val HiraganaRange = 0x3040..0x309F
 val KatakanaRange = 0x30A0..0x30FF

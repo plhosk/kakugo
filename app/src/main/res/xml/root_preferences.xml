@@ -64,8 +64,8 @@
             app:key="about"
             app:title="@string/title_about">
             <intent
-                android:targetClass="org.kaqui.settings.AboutActivity"
-                android:targetPackage="org.kaqui" />
+                android:targetClass="org.kaqui_plhosk.settings.AboutActivity"
+                android:targetPackage="org.kaqui_plhosk" />
         </Preference>
         <Preference
             app:key="showChangelog"

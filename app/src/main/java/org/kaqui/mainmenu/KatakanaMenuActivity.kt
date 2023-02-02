@@ -1,11 +1,11 @@
-package org.kaqui.mainmenu
+package org.kaqui_plhosk.mainmenu
 
 import android.os.Bundle
 import android.view.Gravity
 import org.jetbrains.anko.*
-import org.kaqui.*
-import org.kaqui.model.TestType
-import org.kaqui.settings.ItemSelectionActivity
+import org.kaqui_plhosk.*
+import org.kaqui_plhosk.model.TestType
+import org.kaqui_plhosk.settings.ItemSelectionActivity
 import java.io.Serializable
 
 class KatakanaMenuActivity : BaseActivity() {

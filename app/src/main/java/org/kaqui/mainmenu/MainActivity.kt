@@ -1,4 +1,4 @@
-package org.kaqui.mainmenu
+package org.kaqui_plhosk.mainmenu
 
 import android.app.ProgressDialog
 import android.os.Bundle
@@ -11,10 +11,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import org.jetbrains.anko.*
-import org.kaqui.*
-import org.kaqui.model.DatabaseUpdater
-import org.kaqui.settings.MainSettingsActivity
-import org.kaqui.stats.StatsActivity
+import org.kaqui_plhosk.*
+import org.kaqui_plhosk.model.DatabaseUpdater
+import org.kaqui_plhosk.settings.MainSettingsActivity
+import org.kaqui_plhosk.stats.StatsActivity
 import java.io.File
 import java.util.zip.GZIPInputStream
 import kotlin.coroutines.CoroutineContext

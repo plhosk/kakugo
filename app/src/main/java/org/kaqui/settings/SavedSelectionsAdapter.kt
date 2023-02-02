@@ -1,4 +1,4 @@
-package org.kaqui.settings
+package org.kaqui_plhosk.settings
 
 import android.content.Context
 import android.view.View
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import org.jetbrains.anko.*
-import org.kaqui.R
-import org.kaqui.model.Database
+import org.kaqui_plhosk.R
+import org.kaqui_plhosk.model.Database
 
 class SavedSelectionsAdapter(context: Context, var savedSelections: List<Database.SavedSelection>) : BaseAdapter() {
     private val ankoContext = AnkoContext.createReusable(context, this)

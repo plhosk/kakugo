@@ -1,9 +1,9 @@
-package org.kaqui
+package org.kaqui_plhosk
 
 import android.os.Bundle
 import android.os.Parcel
 import android.util.Log
-import org.kaqui.model.*
+import org.kaqui_plhosk.model.*
 import java.util.*
 
 class TestEngine(

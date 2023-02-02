@@ -1,4 +1,4 @@
-package org.kaqui.stats
+package org.kaqui_plhosk.stats
 
 import android.content.res.Configuration
 import android.graphics.Typeface
@@ -20,11 +20,11 @@ import com.github.mikephil.charting.formatter.ValueFormatter
 import org.jetbrains.anko.*
 import org.jetbrains.anko.support.v4.UI
 import org.jetbrains.anko.support.v4.dip
-import org.kaqui.R
-import org.kaqui.barChart
-import org.kaqui.getColorFromAttr
-import org.kaqui.model.Database
-import org.kaqui.roundToPreviousDay
+import org.kaqui_plhosk.R
+import org.kaqui_plhosk.barChart
+import org.kaqui_plhosk.getColorFromAttr
+import org.kaqui_plhosk.model.Database
+import org.kaqui_plhosk.roundToPreviousDay
 import kotlin.math.min
 import java.text.DateFormat
 import java.util.*

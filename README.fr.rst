@@ -4,8 +4,8 @@ Kakugo
 
 Kakugo est une application qui aide à apprendre le japonais. Elle propose plusieurs tests pour mémoriser les hiragana, katakana et kanji et s'adapte à la vitesse d'apprentissage de l'utilisateur.
 
-- `Télécharger sur F-Droid <https://f-droid.org/packages/org.kaqui/>`_
-- `Télécharger sur Google Play <https://play.google.com/store/apps/details?id=org.kaqui>`_
+- `Télécharger sur F-Droid <https://f-droid.org/packages/org.kaqui_plhosk/>`_
+- `Télécharger sur Google Play <https://play.google.com/store/apps/details?id=org.kaqui_plhosk>`_
 
 Une des plus grandes difficultés de l'apprentissage du Japonais est la mémorisation des kanji et du vocabulaire. Bien qu'il est possible de les apprendre en les lisant et écrivant chaque jour, plus vous en apprenez et plus les réviser devient difficile. Les bons outils peuvent vous permettre d'apprendre cette masse de connaissance plus vite pour pouvoir parler le japonais couramment.
 

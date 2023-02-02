@@ -1,4 +1,4 @@
-package org.kaqui.testactivities
+package org.kaqui_plhosk.testactivities
 
 import android.content.res.ColorStateList
 import android.graphics.PorterDuff
@@ -13,8 +13,8 @@ import androidx.annotation.AttrRes
 import androidx.fragment.app.Fragment
 import org.jetbrains.anko.*
 import org.jetbrains.anko.support.v4.UI
-import org.kaqui.*
-import org.kaqui.model.*
+import org.kaqui_plhosk.*
+import org.kaqui_plhosk.model.*
 
 class CompositionTestFragment : Fragment(), TestFragment {
     companion object {

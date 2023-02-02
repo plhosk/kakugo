@@ -4,8 +4,8 @@ Kakugo
 
 Kakugo ist eine Anwendung, die beim Japanisch lernen hilft. Sie beinhaltet mehrere Tests um sich Hiragana, Katakana, und Kanji einzuprägen, und passt sich dem Lerntempo der Anwender*innen an.
 
-- `Über F-Droid herunterladen <https://f-droid.org/packages/org.kaqui/>`_
-- `Über Google Play herunterladen <https://play.google.com/store/apps/details?id=org.kaqui>`_
+- `Über F-Droid herunterladen <https://f-droid.org/packages/org.kaqui_plhosk/>`_
+- `Über Google Play herunterladen <https://play.google.com/store/apps/details?id=org.kaqui_plhosk>`_
 
 Eine der größten Schwierigkeiten beim Japanisch lernen ist, sich Kanji und Vokabeln einzuprägen. Während das tägliche lesen und schreiben zum lernen funktionieren kann, wird es immer schwieriger je mehr Kanji man kennt, und es benötigt immer mehr Zeit sie alle zu wiederholen. Das richtige Werkzeug kann helfen, sich diesen großen Wissensstand zu behalten, um schneller fließend Japanisch sprechen zu können.
 
