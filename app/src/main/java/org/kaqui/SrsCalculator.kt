@@ -76,7 +76,7 @@ class SrsCalculator {
             return stage1
         }
 
-        fun getScoreUpdate(minLastAsked: Int, item: Item, certainty: Certainty): ScoreUpdate {
+        fun getScoreUpdate(minLastAsked: Int, item: Item, certainty: Certainty, fullCertaintyMode: Boolean): ScoreUpdate {
             val now = Calendar.getInstance().timeInMillis / 1000
 
             val probaParams = getProbaParamsStage1(now, minLastAsked)
@@ -84,7 +84,12 @@ class SrsCalculator {
 
             val previousShortScore = item.shortScore
             // short score reduces the distance by half to target score
-            var newShortScore = previousShortScore + (targetScore - previousShortScore) / 2
+            var averagedNewShortScore = previousShortScore + (targetScore - previousShortScore) / 2
+            var newShortScore =
+                if (fullCertaintyMode)
+                    targetScore
+                else
+                    averagedNewShortScore
             if (newShortScore !in 0f..1f) {
                 Log.wtf(TAG, "Score calculation error, previousShortScore = $previousShortScore, targetScore = $targetScore, newShortScore = $newShortScore")
             }
@@ -106,7 +111,7 @@ class SrsCalculator {
                             max(0.0, previousLongScore - MAX_LONG_SCORE_UPDATE_INCREMENT)
                         certainty == Certainty.DONTKNOW ->
                             previousLongScore / 2
-                        newShortScore < GOOD_WEIGHT ->
+                        averagedNewShortScore < GOOD_WEIGHT ->
                             previousLongScore
                         certainty == Certainty.SURE ->
                             min(1.0, previousLongScore + (MAX_LONG_SCORE_UPDATE_INCREMENT *

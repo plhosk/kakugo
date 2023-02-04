@@ -20,6 +20,7 @@ import androidx.core.graphics.drawable.DrawableCompat
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
+import androidx.preference.PreferenceManager
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.*
@@ -297,7 +298,8 @@ class TestActivity : BaseActivity(), TestFragmentHolder, CoroutineScope {
     }
 
     override fun onAnswer(button: View?, certainty: Certainty, wrong: Item?) {
-        testEngine.markAnswer(certainty, wrong)
+        val fullCertaintyMode = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("full_certainty_mode", false)
+        testEngine.markAnswer(certainty, wrong, fullCertaintyMode)
         updateSessionScore()
     }
 

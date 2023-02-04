@@ -90,7 +90,7 @@ class QuizTestFragment : Fragment(), TestFragment {
                                                 if (singleButtonMode) {
                                                     val position = answerTexts.size
                                                     val answerButton = button {
-                                                        gravity = Gravity.START
+                                                        gravity = Gravity.CENTER_VERTICAL
                                                         typeface = TypefaceManager.getTypeface(context)
                                                         transformationMethod = null
                                                         
@@ -141,7 +141,7 @@ class QuizTestFragment : Fragment(), TestFragment {
                                     repeat(answerCount / COLUMNS) {
                                         linearLayout {
                                             repeat(COLUMNS) {
-                                                val answerTextSizeJP = 30f
+                                                val answerTextSizeJP = 40f
                                                 val answerView =
                                                         if (singleButtonMode) {
                                                             gravity = Gravity.CENTER_VERTICAL

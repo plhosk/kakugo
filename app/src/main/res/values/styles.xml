@@ -79,7 +79,9 @@
 
     <style name="AnswersButtonStyle">
         <item name="android:background">@drawable/custom_button_inset</item>
-        <item name="android:minHeight">48dp</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
         <!--        <item name="android:background">@drawable/abc_btn_default_mtrl_shape</item>-->
     </style>
 

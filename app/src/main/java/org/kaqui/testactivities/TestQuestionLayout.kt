@@ -42,7 +42,7 @@ class TestQuestionLayout {
                 } else if (activity.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
                     val (weightQuestion, weightAnswers) =
                             when {
-                                resources.configuration.screenHeightDp < 800 -> Pair(.5f, 1f)
+                                resources.configuration.screenHeightDp < 800 -> Pair(.25f, .75f)
                                 resources.configuration.screenHeightDp < 1000 -> Pair(.5f, 1f)
                                 else -> Pair(.5f, 1f)
                             }

@@ -57,6 +57,12 @@
             app:summaryOn="@string/hide_answers_on_summary"
             app:title="@string/hide_answers"
             app:defaultValue="true" />
+
+        <SwitchPreference
+            app:key="full_certainty_mode"
+            app:summaryOff="(Default) Multiple correct answers will be needed to learn an item"
+            app:summaryOn="A single correct answer will learn the item"
+            app:title="Full certainty mode" />
     </PreferenceCategory>
 
     <PreferenceCategory app:title="@string/pref_cat_about">

@@ -191,11 +191,11 @@ class TestEngine(
         lastQuestionsIds.add(id)
     }
 
-    fun markAnswer(certainty: Certainty, wrong: Item? = null) {
+    fun markAnswer(certainty: Certainty, wrong: Item? = null, fullCertaintyMode: Boolean) {
         val minLastCorrect = itemView.getMinLastAsked()
 
         if (certainty == Certainty.DONTKNOW) {
-            val scoreUpdate = SrsCalculator.getScoreUpdate(minLastCorrect, currentQuestion, Certainty.DONTKNOW)
+            val scoreUpdate = SrsCalculator.getScoreUpdate(minLastCorrect, currentQuestion, Certainty.DONTKNOW, fullCertaintyMode)
             itemView.applyScoreUpdate(scoreUpdate)
             itemView.logTestItem(testType, scoreUpdate, certainty, wrong?.id)
             currentDebugData?.scoreUpdate = scoreUpdate
@@ -204,7 +204,7 @@ class TestEngine(
             else
                 addUnknownAnswerToHistory(currentQuestion)
         } else {
-            val scoreUpdate = SrsCalculator.getScoreUpdate(minLastCorrect, currentQuestion, certainty)
+            val scoreUpdate = SrsCalculator.getScoreUpdate(minLastCorrect, currentQuestion, certainty, fullCertaintyMode)
             itemView.applyScoreUpdate(scoreUpdate)
             itemView.logTestItem(testType, scoreUpdate, certainty, wrong?.id)
             currentDebugData?.scoreUpdate = scoreUpdate
@@ -213,7 +213,7 @@ class TestEngine(
         }
 
         if (wrong != null) {
-            val scoreUpdateBad = SrsCalculator.getScoreUpdate(minLastCorrect, wrong, Certainty.DONTKNOW)
+            val scoreUpdateBad = SrsCalculator.getScoreUpdate(minLastCorrect, wrong, Certainty.DONTKNOW, fullCertaintyMode)
             itemView.applyScoreUpdate(scoreUpdateBad)
         }
 
