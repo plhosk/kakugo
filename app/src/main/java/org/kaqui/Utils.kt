@@ -226,7 +226,7 @@ fun showItemProbabilityData(context: Context, item: String, probabilityData: Tes
 fun wrapInScrollView(subLayout: _LinearLayout, block: _ScrollView.() -> Unit): LinearLayout {
     with(subLayout) {
         return verticalLayout {
-            gravity = Gravity.CENTER
+            gravity = Gravity.BOTTOM
 
             scrollView {
                 block()

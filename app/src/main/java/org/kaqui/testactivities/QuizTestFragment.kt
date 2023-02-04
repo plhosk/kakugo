@@ -3,10 +3,7 @@ package org.kaqui_plhosk.testactivities
 import android.graphics.Color
 import android.os.Bundle
 import android.util.TypedValue
-import android.view.Gravity
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.ScrollView
@@ -85,7 +82,7 @@ class QuizTestFragment : Fragment(), TestFragment {
                     }
                     answersToShow = wrapInScrollView(this) {
                         scrollView = this
-                        verticalLayout {
+                        verticalLayout(R.style.KanjiAnswersVerticalLayout) {
                             when (testType) {
                                 TestType.WORD_TO_READING, TestType.WORD_TO_MEANING, TestType.KANJI_TO_READING, TestType.KANJI_TO_MEANING -> {
                                     repeat(answerCount) {
@@ -96,7 +93,7 @@ class QuizTestFragment : Fragment(), TestFragment {
                                                         gravity = Gravity.START
                                                         typeface = TypefaceManager.getTypeface(context)
                                                         transformationMethod = null
-
+                                                        
                                                         setOnClickListener { onAnswerClicked(this, Certainty.SURE, position) }
                                                         setOnLongClickListener { onAnswerClicked(this, Certainty.MAYBE, position); true }
                                                     }.lparams(width = matchParent)
@@ -144,6 +141,7 @@ class QuizTestFragment : Fragment(), TestFragment {
                                     repeat(answerCount / COLUMNS) {
                                         linearLayout {
                                             repeat(COLUMNS) {
+                                                val answerTextSizeJP = 30f
                                                 val answerView =
                                                         if (singleButtonMode) {
                                                             gravity = Gravity.CENTER_VERTICAL
@@ -154,8 +152,8 @@ class QuizTestFragment : Fragment(), TestFragment {
                                                                 transformationMethod = null
                                                                 setTextSize(TypedValue.COMPLEX_UNIT_SP,
                                                                         when (testType) {
-                                                                            TestType.READING_TO_WORD, TestType.MEANING_TO_WORD -> 30f
-                                                                            else -> 50f
+                                                                            TestType.READING_TO_WORD, TestType.MEANING_TO_WORD -> answerTextSizeJP
+                                                                            else -> answerTextSizeJP
                                                                         })
                                                                 textAlignment = TextView.TEXT_ALIGNMENT_CENTER
                                                                 setOnClickListener { onAnswerClicked(this, Certainty.SURE, position) }
@@ -174,8 +172,8 @@ class QuizTestFragment : Fragment(), TestFragment {
                                                                         typeface = TypefaceManager.getTypeface(context)
                                                                         setTextSize(TypedValue.COMPLEX_UNIT_SP,
                                                                                 when (testType) {
-                                                                                    TestType.READING_TO_WORD, TestType.MEANING_TO_WORD -> 30f
-                                                                                    else -> 50f
+                                                                                    TestType.READING_TO_WORD, TestType.MEANING_TO_WORD -> answerTextSizeJP
+                                                                                    else -> answerTextSizeJP
                                                                                 })
                                                                         textAlignment = TextView.TEXT_ALIGNMENT_CENTER
                                                                     }.lparams(weight = 1f)
@@ -212,11 +210,12 @@ class QuizTestFragment : Fragment(), TestFragment {
                                 }
                                 else -> throw RuntimeException("unsupported test type for TestActivity")
                             }
-                            separator(requireActivity())
-                            nextButton = button(R.string.next) {
+//                            separator(requireActivity())
+                            nextButton = button(" ") {
+                                setExtTint(R.attr.backgroundDontKnow)
                                 setOnClickListener { onNextClicked() }
                             }.lparams(width = matchParent)
-                            dontKnowButton = button(R.string.dont_know) {
+                            dontKnowButton = button(" ") {
                                 setExtTint(R.attr.backgroundDontKnow)
                                 setOnClickListener { onAnswerClicked(this, Certainty.DONTKNOW, 0) }
                             }.lparams(width = matchParent)
@@ -349,7 +348,7 @@ class QuizTestFragment : Fragment(), TestFragment {
 
     companion object {
         private const val TAG = "QuizTestFragment"
-        private const val COLUMNS = 2
+        private const val COLUMNS = 1
 
         private const val NO_ANSWER = 0x1000
         private const val DONT_KNOW = 0x1001

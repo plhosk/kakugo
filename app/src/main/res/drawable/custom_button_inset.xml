@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Override of @drawable/abc_btn_default_mtrl_shape -->
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/abc_button_inset_horizontal_material"
+    android:insetTop="1dp"
+    android:insetRight="@dimen/abc_button_inset_horizontal_material"
+    android:insetBottom="2dp">
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/abc_control_corner_material" />
+        <solid android:color="@android:color/white" />
+        <padding android:left="@dimen/abc_button_padding_horizontal_material"
+            android:top="1dp"
+            android:right="@dimen/abc_button_padding_horizontal_material"
+            android:bottom="2dp" />
+    </shape>
+</inset>

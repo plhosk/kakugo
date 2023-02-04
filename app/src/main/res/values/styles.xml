@@ -77,6 +77,17 @@
         <item name="historyBackground">#222222</item>
     </style>
 
+    <style name="AnswersButtonStyle">
+        <item name="android:background">@drawable/custom_button_inset</item>
+        <item name="android:minHeight">48dp</item>
+        <!--        <item name="android:background">@drawable/abc_btn_default_mtrl_shape</item>-->
+    </style>
+
+    <style name="KanjiAnswersVerticalLayout">
+        <item name="android:buttonStyle">@style/AnswersButtonStyle</item>
+<!--        <item name="android:buttonStyle">@style/Widget.AppCompat.Button</item>-->
+    </style>
+
     <style name="Separator">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
