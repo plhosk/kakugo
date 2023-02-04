@@ -62,9 +62,9 @@ class QuizTestFragment : Fragment(), TestFragment {
                 }
         val questionMaxSize =
             when (testType) {
-                TestType.WORD_TO_READING, TestType.WORD_TO_MEANING, TestType.KANJI_TO_READING, TestType.KANJI_TO_MEANING -> 200
-                TestType.READING_TO_WORD, TestType.MEANING_TO_WORD, TestType.READING_TO_KANJI, TestType.MEANING_TO_KANJI -> 30
-                TestType.HIRAGANA_TO_ROMAJI, TestType.ROMAJI_TO_HIRAGANA, TestType.KATAKANA_TO_ROMAJI, TestType.ROMAJI_TO_KATAKANA -> 200
+                TestType.WORD_TO_READING, TestType.WORD_TO_MEANING, TestType.KANJI_TO_READING, TestType.KANJI_TO_MEANING, TestType.READING_TO_KANJI -> 60
+                TestType.READING_TO_WORD, TestType.MEANING_TO_WORD, TestType.MEANING_TO_KANJI -> 20
+                TestType.HIRAGANA_TO_ROMAJI, TestType.ROMAJI_TO_HIRAGANA, TestType.KATAKANA_TO_ROMAJI, TestType.ROMAJI_TO_KATAKANA -> 60
                 else -> throw RuntimeException("unsupported test type for TestActivity")
             }
 

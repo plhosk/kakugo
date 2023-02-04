@@ -26,7 +26,7 @@ class TestQuestionLayout {
                             typeface = TypefaceManager.getTypeface(activity)
                             TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(this, questionMinSize, questionMaxSize, 10, TypedValue.COMPLEX_UNIT_SP)
                             textAlignment = TextView.TEXT_ALIGNMENT_CENTER
-                            gravity = Gravity.CENTER
+                            gravity = Gravity.BOTTOM
                         }.lparams(width = 0, height = matchParent, weight = 1f) {
                             bottomMargin = dip(8)
                         }
@@ -51,7 +51,7 @@ class TestQuestionLayout {
                         typeface = TypefaceManager.getTypeface(activity)
                         TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(this, questionMinSize, questionMaxSize, 10, TypedValue.COMPLEX_UNIT_SP)
                         textAlignment = TextView.TEXT_ALIGNMENT_CENTER
-                        gravity = Gravity.CENTER
+                        gravity = Gravity.BOTTOM
                     }.lparams(width = matchParent, height = 0, weight = weightQuestion) {
                         bottomMargin = dip(8)
                     }
