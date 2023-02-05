@@ -62,8 +62,8 @@
         <item name="itemMeh">#313F4D</item>
         <item name="itemBad">#500000</item>
 
-        <item name="wrongAnswerBackground">#350000</item>
-        <item name="correctAnswerBackground">#092600</item>
+        <item name="wrongAnswerBackground">#650000</item>
+        <item name="correctAnswerBackground">#085300</item>
 
         <item name="compositionGood">#085300</item>
         <item name="compositionBadSelected">#350000</item>
