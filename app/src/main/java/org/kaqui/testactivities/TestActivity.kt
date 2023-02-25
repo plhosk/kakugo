@@ -540,7 +540,8 @@ class TestActivity : BaseActivity(), TestFragmentHolder, CoroutineScope {
         try {
             startActivity(intent)
         } catch (e: ActivityNotFoundException) {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jisho.org/search/${kanji.kanji}%20%23kanji")))
+            // startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jisho.org/search/${kanji.kanji}%20%23kanji")))
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jpdb.io/search?q=${kanji.kanji}")))
         }
     }
 
@@ -553,7 +554,8 @@ class TestActivity : BaseActivity(), TestFragmentHolder, CoroutineScope {
         try {
             startActivity(intent)
         } catch (e: ActivityNotFoundException) {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jisho.org/search/${word.word}")))
+            // startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jisho.org/search/${word.word}")))
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jpdb.io/search?q=${word.word}")))
         }
     }
 
