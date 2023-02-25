@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AnswersButtonStyleEnglish">
+        <item name="android:background">@drawable/custom_button_inset</item>
+        <item name="android:height">54dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMaxTextSize">20dp</item>
+    </style>
+</resources>

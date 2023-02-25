@@ -82,7 +82,11 @@ class QuizTestFragment : Fragment(), TestFragment {
                     }
                     answersToShow = wrapInScrollView(this) {
                         scrollView = this
-                        verticalLayout(R.style.KanjiAnswersVerticalLayout) {
+                        verticalLayout(
+                            when (testType) {
+                                TestType.WORD_TO_READING, TestType.WORD_TO_MEANING, TestType.KANJI_TO_READING, TestType.KANJI_TO_MEANING -> R.style.KanjiAnswersVerticalLayoutEnglish
+                                else -> R.style.KanjiAnswersVerticalLayoutJapanese
+                            }) {
                             when (testType) {
                                 TestType.WORD_TO_READING, TestType.WORD_TO_MEANING, TestType.KANJI_TO_READING, TestType.KANJI_TO_MEANING -> {
                                     repeat(answerCount) {
