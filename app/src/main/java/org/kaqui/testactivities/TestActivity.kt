@@ -30,6 +30,7 @@ import org.jetbrains.anko.design.floatingActionButton
 import org.jetbrains.anko.support.v4.nestedScrollView
 import org.kaqui_plhosk.*
 import org.kaqui_plhosk.model.*
+import java.net.URLEncoder
 import kotlin.coroutines.CoroutineContext
 
 class TestActivity : BaseActivity(), TestFragmentHolder, CoroutineScope {
@@ -533,30 +534,13 @@ class TestActivity : BaseActivity(), TestFragmentHolder, CoroutineScope {
     }
 
     private fun showItemInDict(kanji: Kanji) {
-        val intent = Intent("sk.baka.aedict3.action.ACTION_SEARCH_JMDICT")
-        intent.putExtra("kanjis", kanji.kanji)
-        intent.putExtra("search_in_kanjidic", true)
-        intent.putExtra("showEntryDetailOnSingleResult", true)
-        try {
-            startActivity(intent)
-        } catch (e: ActivityNotFoundException) {
-            // startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jisho.org/search/${kanji.kanji}%20%23kanji")))
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jpdb.io/search?q=${kanji.kanji}")))
-        }
+        val query: String = URLEncoder.encode(kanji.kanji, Charsets.UTF_8.name())
+        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jpdb.io/search?q=${query}")))
     }
 
     private fun showItemInDict(word: Word) {
-        val intent = Intent("sk.baka.aedict3.action.ACTION_SEARCH_JMDICT")
-        intent.putExtra("kanjis", word.word)
-        intent.putExtra("showEntryDetailOnSingleResult", true)
-        intent.putExtra("match_jp", "Exact")
-        intent.putExtra("deinflect", false)
-        try {
-            startActivity(intent)
-        } catch (e: ActivityNotFoundException) {
-            // startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jisho.org/search/${word.word}")))
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jpdb.io/search?q=${word.word}")))
-        }
+        val query: String = URLEncoder.encode(word.word, Charsets.UTF_8.name())
+        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://jpdb.io/search?q=${query}")))
     }
 
     private fun updateSheetPeekHeight(v: View) {
