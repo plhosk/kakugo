@@ -48,6 +48,7 @@ android {
             includeAndroidResources = true
         }
     }
+    namespace 'org.kaqui_plhosk'
 }
 
 dependencies {
